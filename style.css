@@ -30,6 +30,10 @@ body {
     padding: 1rem;
 }
 
+.padded-lg {
+    padding: 10%;
+}
+
 .bg-dark {
     background-color: #192b37;
     color: #fff;
@@ -55,7 +59,7 @@ h3 {
 
 p {
     font-weight: 200;
-    line-height: 1.7rem;
+    line-height: 1.5;
     margin-bottom: 1rem;
 }
 
@@ -75,8 +79,18 @@ p:last-child {
     font-size: 1.5rem;
 }
 
+.medium-text {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+ 
 .big-text {
     font-size: 4.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(120, 120, 125);
 }
 
 .font-weight-light {
@@ -134,8 +148,8 @@ header {
     background-position: center center;
 
 }
-
-header h3 {
+/* consider deleting this because the universal h3 element has set the same line-height and there's the reusable big-text class */
+header h3 { 
     font-size: 5.5rem;
     line-height: 1;
 }
@@ -162,4 +176,12 @@ header h3 {
 .bg-pillow {
     background-image: url("/images/the-sleep-co-3.jpg");
     background-position: 50% 57%;
+}
+
+/* Quote/Testimonial Styles */
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+    line-height: 1;
 }
