@@ -5,17 +5,13 @@
 }
 
 /* Temporary styles for structural recognition */
-* {
-    padding: 0.5rem;
+section {
     border: 1px solid rgb(240, 240, 240);
 }
 
-html {
-    border: none;
-}
-
 body {
-    border: none;
+    font-family: "Catamaran", sans-serif;
+    color: #192b37;
 }
 
 /* Image Styles */
@@ -39,3 +35,16 @@ body {
     background-color: #192b37;
     color: #fff;
 }
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
