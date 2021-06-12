@@ -11,17 +11,17 @@
     box-sizing: border-box;
 }
 
-/* Temporary styles for structural recognition */
-section {
-    border: 1px solid rgb(240, 240, 240);
+/* Gridlex Reset */
+[class*=grid-], [class*=grid_], [class~=grid] {
+    margin: 0;
 }
 
+/* Universal Styles & Utility Classes */
 body {
     font-family: "Catamaran", sans-serif;
     color: #192b37;
 }
 
-/* Universal Styles & Utility Classes */
 .padded {
     padding: 5%;
 }
@@ -67,6 +67,15 @@ p:last-child {
     margin-bottom: 0;
 }
 
+a {
+    color: inherit;
+    text-underline-position: under;
+}
+
+a:hover {
+    color: #FFBE00;
+}
+
 .featured-text {
     color: #FFBE00;
 }
@@ -81,7 +90,7 @@ p:last-child {
 
 .medium-text {
     font-size: 2rem;
-    line-height: 1.1;
+    line-height: 1.2;
 }
  
 .big-text {
@@ -184,4 +193,9 @@ header h3 {
     display: inline-block;
     color: rgb(120, 120, 125);
     line-height: 1;
+}
+
+/* Footer Styles */
+footer a {
+    text-decoration: none;
 }
