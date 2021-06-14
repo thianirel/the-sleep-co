@@ -5,67 +5,77 @@
     box-sizing: border-box;
 }
 
-/* Universal Styles */
+/* Colors
+    Site background: #FAFAFF;
+    Input background: #E4E4E4;
+    Active input background: #EDF7F6;
+    Text: #202030;
+    Button: #B14AED;
+*/
+
 body {
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    padding: 5%;
+    color: #202030;
+    background-color: #FAFAFF;
 }
 
 section {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(245, 245, 245);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-input, textarea {
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    width: 100%;
-    margin-top: 5px;
-    border: 1px solid rgb(220, 220, 220);
+.form-group {
+    width: 600px;
+    padding: 0 5%;
 }
 
-/* Button Styles */
-.button-style {
+form input, form textarea {
     width: 100%;
-    padding: 0.8rem 1.5rem;
-    margin-top: 15px;
-    border: 1px solid rgb(23, 103, 173);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
-    background-color: rgb(23, 103, 173);
+    outline: none;
+    background-color: #F0F0FF;
+    font-family: inherit;
+    font-size: 1.1rem;
 }
 
-.button-style:hover {
-    border: 1px solid rgb(23, 103, 173);
-    color: rgb(23, 103, 173);
-    background-color: #fff;
-    transition: .2s ease-in;
+form input:focus, form textarea:focus {
+    background-color: #e7e7ff;
 }
 
-/* Reusable Styles & Utility Classes */
-/* This will block the textarea to be dragged horizontally */
-.no-drag-hor {
+textarea {
+    min-height: 8rem;
     resize: vertical;
 }
 
-/* Element Styles */
-.container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(180, 180, 180, 0.3);
-    border-radius: 10px;
+form label {
+    display: block;
+    margin: 0.75rem 0 0.1rem;
+    color: #777;
 }
 
-.form-group {
-    margin-top: 20px;
+form button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #B14AED;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #B14AED;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form button:hover {
+    color: #B14AED;
+    background-color: #fff;
+    border: 1px solid #B14AED;
+    transition: .2s ease;
 }

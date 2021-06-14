@@ -7,29 +7,25 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/form-style.css">
+    <link rel="stylesheet" href="form-style.css">
 </head>
 <body>
     <section>
-        <div class="container">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="FirstName">
+        <div>
+            <form class="form-group" action="https://formspree.io/f/mqkwbbqd" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="_name">
                 </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="LastName">
-                </div>
-                <div class="form-group">
+                <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="Email">
+                    <input type="email" id="email" name="_replyto">
                 </div>
-                <div class="form-group">
+                <div>
                     <label for="message">Message</label>
-                    <textarea class="no-drag-hor" id="message" name="Message" cols="30" rows="10"></textarea>
+                    <textarea id="message" name="Message" cols="30" rows="10"></textarea>
                 </div>
-                <button type="submit" class="button-style">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
