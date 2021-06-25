@@ -27,6 +27,10 @@ body {
 }
 
 .padded-sm {
+    padding: 2.5%;
+}
+
+.padded-1 {
     padding: 1rem;
 }
 
@@ -39,6 +43,14 @@ body {
     color: #fff;
 }
 
+.bg-featured {
+    background-color: #FFBE00;
+}
+
+.bg-light {
+    background-color: #E3ECF2;
+}
+
 /* Universal Image Placeholder Styles */
 .bg-image {
     background-image: url(/images/the-sleep-co-2.jpg);
@@ -46,15 +58,26 @@ body {
     min-height: 10rem;
 }
 
-/* Typography Styles */
-h2 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
+.landscape {
+    padding-bottom: 62.5%;
 }
 
-h3 {
-    line-height: 1;
+.square {
+    padding-bottom: 100%;
+}
+
+.portrait {
+    padding-bottom: 125%;
+}
+
+/* Typography Styles */
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 p {
@@ -63,13 +86,19 @@ p {
     margin-bottom: 1rem;
 }
 
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
 p:last-child {
     margin-bottom: 0;
 }
 
 a {
     color: inherit;
-    text-underline-position: under;
+    text-decoration: none;
+    border-bottom: 1px solid;
 }
 
 a:hover {
