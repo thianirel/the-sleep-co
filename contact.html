@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sleep.co Mattress Company</title>
+    <title>About The Sleep Co</title>
     <!--------------- This is our Fontawesome icons --------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--------------- This is our Gridlex --------------->
@@ -15,43 +15,53 @@
     <!--------------- This is our custom stylesheet --------------->
     <link rel="stylesheet" href="style.css" />
 </head>
+
+<!-- This is the body, where all of our page content goes. -->
 <body>
+    
     <!--------------- Header section --------------->
-    <header class="padded grid text-center tall-60">
+    <header class="grid text-center tall-60">
         <div class="header-nav col-12-top grid">
-            <div class="col-5_sm-12-middle sm-padded-b-0">
+            <div class="col-4-middle">
                 <a href="/index.html" class="logo">
                     <h2>The Sleep Co</h2>
                 </a>
             </div>
-            <nav class="col-7_sm-12-middle text-right sm-text-center">
+            <nav class="col-8-middle text-right">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About</a>
-                <a href="/product.html">Product</a>
+                <a href="/products.html">Products</a>
                 <a href="/contact.html">Contact</a>
             </nav>
         </div>
         <div class="col-12-middle">
             <h3 class="font-weight-extra-bold editable">
-                Why <span class="featured-text">wait?</span>
+                Why <span class="featured-text">wait</span>
             </h3>
             <h1 class="font-weight-light editable">
                 One call away from the perfect night sleep
             </h1>
         </div>
     </header>
-    <!--------------- Contact form section --------------->
-    <section class="grid bg-dark light-text">
+
+    <!--------------- Form section --------------->
+    <section class="grid bg-dark light-text padded">
         <div class="col-6 padded">
             <h2>Let's <span class="featured-text">connect</span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam repudiandae nemo voluptas vitae laudantium in, ipsam molestiae neque voluptatibus, repellendus minima, pariatur ea aperiam ab eius voluptates sed exercitationem atque!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus tenetur cum ratione, dolore molestiae harum. Corrupti, autem. Praesentium dolor sunt pariatur id consectetur a quisquam quasi, tenetur, autem est ut.</p>
         </div>
         <div class="col-6 padded">
-            <h2>Add contact form here</h2>
+            <form>
+                <input type="text" name="_name" placeholder="Your Name">
+                <input type="email" name="_replyto" placeholder="Your Email">
+                <textarea name="message" placeholder="Tell us what you want..." rows="6"></textarea>
+                <button class="button" type="submit">SUBMIT</button>
+            </form>
         </div>
     </section>
-    <!--------------- Gallery section --------------->
-    <section class="grid padded">
+
+     <!--------------- Gallery section --------------->
+     <section class="grid padded">
         <div class="bg-image bg-pug col-6 tall-70">
             <!--------------- Background image: pug --------------->
         </div>
@@ -60,24 +70,26 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam repudiandae nemo voluptas vitae laudantium in, ipsam molestiae neque voluptatibus, repellendus minima, pariatur ea aperiam ab eius voluptates sed exercitationem atque!</p>
         </div>
     </section>
-    <!--------------- Feature icons grid --------------->
+
+    <!--------------- Feature icons grid sustainability --------------->
     <section class="padded grid-center bg-light">
         <div class="padded-sm col-12 text-center">
             <h2>Need help deciding?</h2>
         </div>
         <div class="padded-sm col-3 editable">
             <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero, dolores qui inventore praesentium voluptatum quos dolore id fugit voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae impedit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero.</p>
         </div>
         <div class="padded-sm col-3 editable">
             <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto magnam recusandae voluptatum reprehenderit amet vel ea commodi consequatur obcaecati. Consectetur quod quas perspiciatis. Facilis aliquam eaque voluptates commodi possimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto magnam recusandae.</p>
         </div>
         <div class="padded-sm col-3 editable">
             <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem, consectetur sed perspiciatis molestiae soluta dolores fuga culpa ipsam laborum nesciunt sint repudiandae quis id tenetur, voluptate quia fugiat officiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem.</p>
         </div>
     </section>
+
     <!--------------- Testimonial section --------------->
     <section class="padded-lg grid">
         <div class="col-1 text-right">
@@ -91,6 +103,7 @@
             <span class="quote-icon">”</span>
         </div>
     </section>
+
     <!--------------- Footer --------------->
     <footer class="padded grid-spaceBetween bg-dark">
         <div class="col-4-bottom">
@@ -103,6 +116,6 @@
             <p><strong>Store:</strong> 55 Main St, Chicago</p>
             <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
         </div>
-    </footer>
+    </footer>   
 </body>
 </html>
