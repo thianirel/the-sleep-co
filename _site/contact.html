@@ -1,9 +1,39 @@
----
-layout: default
----
-    <!--------------- Header section --------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sleep Co Mattress Company</title>
+    <!--------------- This is our Fontawesome icons --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------- This is our Gridlex --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+    <!--------------- This is our Google Fonts --------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" />
+    <!--------------- This is our custom stylesheet --------------->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- This is the body, where all of our page content goes. -->
+<body>
+
+        <!--------------- Header section --------------->
     <header class="grid tall-60">
-        {% include header-nav.html %}
+        <div class="header-nav col-12-top grid">
+    <div class="col-5_sm-12-middle sm-padded-b-0">
+        <a href="/index.html" class="logo">
+            <h2>The Sleep Co</h2>
+        </a>
+    </div>
+    <nav class="col-7_sm-12-middle text-right sm-text-center">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+</div>
         <div class="col-12-middle text-center">
             <h3 class="font-weight-extra-bold editable">
                 Why <span class="featured-text">wait</span>
@@ -73,3 +103,18 @@ layout: default
             <span class="quote-icon">”</span>
         </div>
     </section>
+
+    <footer class="padded grid-spaceBetween bg-dark">
+        <div class="col-4-bottom">
+            <h2>Let's<br /> <span class="featured-text">connect</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis dolore labore laudantium ratione nisi at quos aliquam quia, maxime totam delectus, praesentium, necessitatibus quis! Nam, quas reiciendis! Voluptatem, suscipit.</p>
+        </div>
+        <div class="col-5-middle">
+            <p><strong>Call:</strong> <a href="tel:#">04555 5555</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@thesleep.co">hello@thesleep.co</a></p>
+            <p><strong>Store:</strong> 55 Main St, Chicago</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
+        </div>
+    </footer>
+</body>
+</html>
