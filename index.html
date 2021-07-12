@@ -84,3 +84,18 @@ featured:
             <span class="quote-icon">”</span>
         </div>
     </section>
+
+
+
+<!--------------- Feature icons grid --------------->
+<section class="padded grid-center bg-dark">
+    <div class="padded-sm col-12 text-center">
+        <h2><span class="featured-text">Features</span> you will love</h2>
+    </div>
+    {% for item in page.featured %}
+    <div class="padded-sm col-3_sm-6 xxs-stack">
+        <i class="{{item.icon}}"></i>
+        <p>{{item.description}}</p>
+    </div>
+    {% endfor %}
+</section>
