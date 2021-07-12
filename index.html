@@ -1,16 +1,33 @@
 ---
 layout: default
 featured:
- - icon: fab fa-pagelines
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero, dolores qui inventore praesentium voluptatum quos dolore id fugit voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae impedit!
- - icon: fas fa-apple-alt
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero, dolores qui inventore praesentium voluptatum quos dolore id fugit voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae impedit!
- - icon: fas fa-carrot
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero, dolores qui inventore praesentium voluptatum quos dolore id fugit voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae impedit!
- - icon: fas fa-pizza-slice
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam vero, dolores qui inventore praesentium voluptatum quos dolore id fugit voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae impedit!
+  - icon: fas fa-apple-alt
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam
+      vero, dolores qui inventore praesentium voluptatum quos dolore id fugit
+      voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae
+      impedit!
+  - icon: fas fa-carrot
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam
+      vero, dolores qui inventore praesentium voluptatum quos dolore id fugit
+      voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae
+      impedit!
+  - icon: fab fa-pagelines
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam
+      vero, dolores qui inventore praesentium voluptatum quos dolore id fugit
+      voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae
+      impedit!
+  - icon: fas fa-pizza-slice
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam
+      vero, dolores qui inventore praesentium voluptatum quos dolore id fugit
+      voluptas enim? Ipsa deserunt sapiente voluptates neque, esse molestiae
+      impedit!
 ---
-    <!--------------- Header section --------------->
+
+<!--------------- Header section --------------->
     <header class="grid tall-100 md-tall-80">
         {% include header-nav.html %}
         <div class="col-12 text-center">
@@ -84,18 +101,3 @@ featured:
             <span class="quote-icon">”</span>
         </div>
     </section>
-
-
-
-<!--------------- Feature icons grid --------------->
-<section class="padded grid-center bg-dark">
-    <div class="padded-sm col-12 text-center">
-        <h2><span class="featured-text">Features</span> you will love</h2>
-    </div>
-    {% for item in page.featured %}
-    <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="{{item.icon}}"></i>
-        <p>{{item.description}}</p>
-    </div>
-    {% endfor %}
-</section>
