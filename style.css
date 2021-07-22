@@ -99,16 +99,25 @@
 /* Image Placeholder Styles */
 .bg-image {
     background-image: url(/images/the-sleep-co-2.jpg);
+    background-color: rgb(240,240,240);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
     /* min-height: 10rem; */
 }
 
 /* Image Height Utility Classes */
-.landscape { padding-bottom: 65%; }
-.square { padding-bottom: 100%; }
+.portrait-tall { padding-bottom: 175%; }
 .portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
 
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 /* Typography Styles ------------------------------ */
 body {
@@ -171,6 +180,11 @@ a:hover {
 .featured-text { color: #FFBE00; }
 .white-text { color: #fff; }
 
+/* Image Gallery Styles */
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
+
 /* Buttons & Forms Styles ------------------------------ */
 input, textarea {
     width: 100%;
@@ -231,7 +245,6 @@ textarea:focus {
     font-size: 2.2rem;
     margin-bottom: 0;
 }
-
 
 
 
