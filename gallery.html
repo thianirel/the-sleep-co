@@ -22,11 +22,11 @@ gallery:
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /images/the-sleep-co-4.jpg
-    type: cat
+    type: rabbit
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /images/the-sleep-co-3.jpg
-    type: cat
+    type: rabbit
 ---
 
 <!--------------- Header section --------------->
@@ -44,6 +44,7 @@ gallery:
 
 <!--------------- Gallery section ----------------->
 {% if page.popup-gallery == true %}
+<!-- Popup Gallery -->
 <section class="padded {{page.gallery-background}}">
     <h2>Popup Gallery</h2>
     <div class="gallery grid" id="lightgallery">
@@ -57,6 +58,7 @@ gallery:
     </div>
 </section>
 {% else %}
+<!-- Standard Gallery -->
 <section class="padded {{page.gallery-background}}">
     <h2>Standard Gallery</h2>
     <div class="gallery grid">
@@ -68,6 +70,13 @@ gallery:
     </div>
 </section>
 {% endif %}
+
+<!--------------- Testimonial section --------------->
+{% include testimonial.html %}
+
+<!--------------- Youtube section --------------->
+{% include youtube-video.html youtube_id="5ueMyVDiurw" %}
+  
 
 <!-- <section>
     <div class="gallery grid padded-1" id="lightgallery-2">
